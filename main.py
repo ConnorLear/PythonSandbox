@@ -7,7 +7,7 @@ def wrong():
   exit()
 
 #This is the intro
-username = input("Hello ")
+username = input("Hello, (Username here) >")
 print("You have been welcomed to this game! ")
 print("Maybe the one you can't finish. Maybe your hell.")
 
@@ -41,9 +41,9 @@ second answer = s
 question = #
 """
 
-pa1 = input()
+pa1 = input().lower()
 
-if pa1 == "C" or "c":
+if pa1 == "c":
   p()
   print("Correct! Next question.")
 else:
@@ -63,9 +63,9 @@ print("D. Other")
 
 p()
 
-pa2 = input()
+pa2 = input().lower()
 
-if pa2 == "D" or "d":
+if pa2 == "d":
   p()
   print("Okay? Then what is your answer?")
   p()
@@ -75,7 +75,6 @@ if pa2 == "D" or "d":
     print("Okay? I don't know how you got that but lets continue.")
   else:
     wrong()
-  
 else:
   wrong()
 
@@ -91,8 +90,8 @@ pa3 = int(input("Answer here: "))
 
 if pa3 == 11:
   p()
-  ps3 = input("Are you sure?: ")
-  if ps3 == "No" or "no":
+  ps3 = input("Are you sure?: ").lower()
+  if ps3 == "no":
     p()
     print("Okay maybe your smart, or you've done this a millon")
     print("times but we know the first possibility isn't true.")
@@ -109,9 +108,9 @@ print("What is the rarrest species on earth.")
 
 p()
 
-pa4 = input()
+pa4 = input().lower()
 
-if pa4 == "this question is to hard" or "This question is to hard":
+if pa4 == "this question is to hard":
   p()
   print("I know write...  WAIT! HOW DID YOU")
   print("GUESS THAT ANSWER. Are you cheating?")
@@ -132,11 +131,17 @@ print("D. Feces")
 
 p()
 
-pa5 = input()
+pa5 = input().lower()
 
 p()
 
-if pa5 == "E" or "e":
+if pa5 == "e":
   p()
-  print("How. I didn't even put it on the")
-  print("screen and you still got it correct.")
+  print("How. I didn't even put that answer on the")
+  print("screen. Ok if your so confident then what")
+  print("was the answer for e.")
+
+
+
+
+
