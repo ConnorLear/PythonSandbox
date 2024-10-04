@@ -1,13 +1,8 @@
-def wrong():
-  print("")
-  print("You got this answer wrong!")
-  print("Now you have to completly restart!")
-  exit()
-def correct():
-  print("")
-  print("Correct! Next question.")
 def p():
   print("")
+def wrong():
+  p()
+  print("Correct! Next question.")
 
 #This is the intro
 username = input("Hello ")
@@ -40,24 +35,21 @@ p()
 Player answer -
 player = p
 answer = a
+correct = c
+second answer = s
 question = #
 """
 
 pa1 = input()
 
-"""
-correct_answers = ["C", "c"]
 
-if correct_answers.count(pa1):
-  correct()
+ca1 = ["C", "c"]
+
+if ca1 == pa1:
+  p()
+  print("Correct! Next question.")
 else:
   wrong()  
-"""
-
-if pa1 == "C" or "c":
-  correct()
-else:
-  wrong()
 
 p()
 
@@ -80,7 +72,52 @@ if pa2 == "D" or "d":
   print("Okay? Then what is your answer?")
   p()
   ps2 = input()
+  if ps2 == "2 windows o'clock" or "2 Windows o'clock":
+    p()
+    print("Okay? I don't know how you got that but lets continue.")
+  else:
+    wrong()
   
 else:
   wrong()
+
+p()
+
+print("Third Question:")
+print("This is an easy one. If 1+1= window, and")
+print("1+1 equals 2, then what does 5+6=!")
+
+p()
+
+pa3 = int(input("Answer here: "))
+
+if pa3 == 11:
+  p()
+  ps3 = input("Are you sure?: ")
+  if ps3 == "No" or "no":
+    p()
+    print("Okay maybe your smart, or you've done this a millon")
+    print("times but we know the first possibility isn't true.")
+    print("Next question I guess.")
+  else:
+    wrong()
+else:
+  wrong()
+
+p()
+
+print("Fourth Question:")
+print("What is the rarrest species on earth.")
+
+p()
+
+pa4 = input()
+
+if pa4 == "this question is to hard" or "This question is to hard":
+  p()
+  print("I know write...  WAIT! HOW DID YOU")
+  print("GUESS THAT ANSWER. Are you cheating?")
+else:
+  wrong()
+
 
