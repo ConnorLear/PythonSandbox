@@ -2,7 +2,9 @@ def p():
   print("")
 def wrong():
   p()
-  print("Correct! Next question.")
+  print("Wrong! Now you have to restart the entire game.")
+  p()
+  exit()
 
 #This is the intro
 username = input("Hello ")
@@ -35,17 +37,13 @@ p()
 Player answer -
 player = p
 answer = a
-correct = c
 second answer = s
 question = #
 """
 
 pa1 = input()
 
-
-ca1 = ["C", "c"]
-
-if ca1 == pa1:
+if pa1 == "C" or "c":
   p()
   print("Correct! Next question.")
 else:
@@ -120,4 +118,25 @@ if pa4 == "this question is to hard" or "This question is to hard":
 else:
   wrong()
 
+p()
 
+print("Question 5:")
+print("What do dogs eat.")
+
+p()
+
+print("A. Chinese People")
+print("B. Cats")
+print("C. Dogs")
+print("D. Feces")
+
+p()
+
+pa5 = input()
+
+p()
+
+if pa5 == "E" or "e":
+  p()
+  print("How. I didn't even put it on the")
+  print("screen and you still got it correct.")
