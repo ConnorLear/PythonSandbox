@@ -6,65 +6,60 @@ def wrong():
   p()
   exit()
 
-#This is the intro
+#This is the intro to the program
 username = input("Hello, (Username here) >")
-print("You have been welcomed to this game! ")
-print("Maybe the one you can't finish. Maybe your hell.")
-
+print("""You have been welcomed to this game!
+Maybe the one you can't finish. Maybe your hell.""")
 p()
-
 print("There are ten questions")
-
 p()
 
-#This is question 1
-print("First Question:")
-print("What is 1+1=!")
-
+#Question 1
+print("""First Question:
+What is 1+1=!""")
 p()
-#Answers
-print("A. 2")
-print("B. 11")
-print("C. Window")
-print("D. None of the above")
 
+#Answers Question 1
+print("""A. 2
+B. 11
+C. Window
+D. None of the above""")
 p()
-#A conformation so the player writes the right answer
+
+#Conformation so the player writes the right answer
 print("(btw write the letter not the answer)")
-
 p()
+
 """
-Player answer -
 player = p
 answer = a
 second answer = s
 question = #
 """
 
+#Answer
 pa1 = input().lower()
-
 if pa1 == "c":
   p()
   print("Correct! Next question.")
 else:
   wrong()  
-
 p()
 
-print("Second Question:")
-print("If 1+1= Window then when does 2+2=!")
-
+#Question 2
+print("""Second Question:
+If 1+1= Window then when does 2+2=!""")
 p()
 
-print("A. 2 Windows")
-print("B. 4")
-print("C. 4 o'clock")
-print("D. Other")
-
+#Answer Question 2
+print("""A. 2 Windows
+B. 4
+C. 4 o'clock
+D. Other""")
 p()
 
+#Answer
 pa2 = input().lower()
-
 if pa2 == "d":
   p()
   print("Okay? Then what is your answer?")
@@ -77,17 +72,16 @@ if pa2 == "d":
     wrong()
 else:
   wrong()
-
 p()
+
 
 print("Third Question:")
 print("This is an easy one. If 1+1= window, and")
 print("1+1 equals 2, then what does 5+6=!")
-
 p()
 
-pa3 = int(input("Answer here: "))
 
+pa3 = int(input("Answer here: "))
 if pa3 == 11:
   p()
   ps3 = input("Are you sure?: ").lower()
@@ -137,9 +131,9 @@ p()
 
 if pa5 == "e":
   p()
-  print("How. I didn't even put that answer on the")
-  print("screen. Ok if your so confident then what")
-  print("was the answer for e.")
+  print("""How. I didn't even put that answer on the
+screen. Ok if your so confident then what
+was the answer for e.""")
 
 
 
