@@ -46,22 +46,4 @@ def p3():
     print("Hipp hipp hurra!")
     print("Hipp hipp hurra!")
 def p4():
-    nol = int(input())
-    for i in range(nol-1):
-        (i) = input()
-
-    print(i)
-    print(i)
-    print(i)
-
-p4()
-
-
-
-
-
-
-
-
-
-print("")
+    print("")
