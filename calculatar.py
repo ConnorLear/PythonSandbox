@@ -51,7 +51,7 @@ elif pm == "e":
     p("")
 elif pm == "f":
     p("")
-elif: pm == "g":
+elif pm == "g":
     p("")
 else:
     p("""That's not an option.
