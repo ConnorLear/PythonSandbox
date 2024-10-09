@@ -85,19 +85,14 @@ elif pm == "c":
 #Divition
 elif pm == "d":
     lista =[]
-    x1 = int(input("How many numbers are their to Divide: "))
+    x1 = int(input("How many times do you want to Divide your original number: "))
     p("")
     p("What numbers:")
     for i in range(x1):
         y2 = float(input(">"))
-            lista.append(y2)
-        print("Answer: ",divmod(lista))
-    else:
-        for i in range(x1):
-            y2 = int(input(">"))
-            lista.append(y2)
-        print("Answer: ",divmod(lista))
-
+        lista.append(y2)
+    print("Answer: ",divmod(lista))
+    
 #Variables    
 elif pm == "e":
     p("")
