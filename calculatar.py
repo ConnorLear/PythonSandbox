@@ -10,6 +10,7 @@ C. Multiplication
 D. Divition
 E. Geometry
 F. Algebra
+G. Variable
 """)
 
 """
@@ -20,15 +21,24 @@ n = problem letter
 d = decimal
 """
 
+#Persons answer
 pm = input().lower()
-
 p("")
 
+#Addition
 if pm == "a":
-    n1 = (input("How many numbers are their to add and is there a decimal: "))
+    lista =[]
+    n1 = (input("How many numbers are their to add and is there a decimal(y/n): "))
     x1, y1 = n1.split()
-    p(x1)
-    p(y1)
+    p("")
+    p("What numbers:")
+    if y1 == "y":
+        
+        for i in range(x1):
+            y2 = float(input())
+            
+    else:
+        print("")        
 
 
 elif pm == "b":
@@ -40,6 +50,8 @@ elif pm == "d":
 elif pm == "e":
     p("")
 elif pm == "f":
+    p("")
+elif: pm == "g":
     p("")
 else:
     p("""That's not an option.
