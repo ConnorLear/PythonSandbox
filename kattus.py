@@ -2,6 +2,5 @@
 Kattus problems most go here.
 """
 
-inta = input()
-x, y = inta.split()
-print(x+y)
+inta = int(input())
+print(3*inta+5)
