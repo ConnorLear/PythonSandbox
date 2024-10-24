@@ -1,4 +1,4 @@
-n = int(input())
+n = input()
 x, z = n.split(" ")
-x+y/2 = z
+y = int(z)*2-int(x)
 print(y)
