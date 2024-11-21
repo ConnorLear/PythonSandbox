@@ -25,3 +25,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def birthday(speed, birthday):
+    if birthday:
+        if speed <= 65:
+            return "no ticket"
+        elif speed <= 85:
+            return "small ticket"
+        else:
+            return "big ticket"
+    else:
+        if speed <= 60:
+            return "no ticket"
+        elif speed <= 80:
+            return "small ticket"
+        else:
+            return "big ticket"
+
+print(birthday())
