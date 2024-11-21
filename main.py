@@ -1,4 +1,17 @@
-x = 362956
-while x != 0:
-    x -= 1
-    print(x)
+import random
+
+d1: int = random.randint(1,6)
+d2: int = random.randint(1,6)
+d3: int = random.randint(1,6)
+
+d4 = d1+d2+d3
+
+print(d1)
+print(d2)
+print(d3)
+print(d4)
+
+if d4 > 13:
+    print("You win")
+else:
+    print("You lose")
