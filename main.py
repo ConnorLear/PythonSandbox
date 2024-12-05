@@ -4,9 +4,6 @@ Connor Lear - December 2024
 
 import random
 
-def p(MAAAAAAPS):
-    print(MAAAAAAPS)
-
 def roll_n_times(n: int) -> int:
     print()
 
@@ -20,11 +17,11 @@ least_childs = 1
 max_preditor_kills = 2
 generations_one_turn = 1000
 
-p(f"""There are {prey_amount} {prey_name}!
+print(f"""There are {prey_amount} {prey_name}!
 There are {preditor_amount} {preditor_name}!
 This is the first {generations_one_turn} generations!""")
 
-p("")
+print()
 
 for i in range(generations_one_turn):
 	prey_births: int = random.randint(least_childs, most_childs)
@@ -34,6 +31,6 @@ for i in range(generations_one_turn):
 		if preditor_kills == 2:
 			preditor_amount += max_preditor_kills - 1
 
-p(f"""There are now {prey_amount} {prey_name}!
+print(f"""There are now {prey_amount} {prey_name}!
 There are now {preditor_amount} {preditor_name}!
 This is the second {generations_one_turn} generations!""")
