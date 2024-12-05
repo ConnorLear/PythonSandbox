@@ -7,7 +7,7 @@ import random
 def roll_n_times(n: int) -> int:
     print()
 
-prey_amount: int = 10
+prey_amount: int = 100
 preditor_amount: int = 1
 #You have to make prey and preditor names plurul
 prey_name: str = "Pigs"
@@ -28,6 +28,7 @@ for i in range(generations_one_turn):
 	prey_amount += prey_births
 	for i in range(preditor_amount):
 		preditor_kills: int = random.randint(1, max_preditor_kills)
+		prey_amount -= preditor_kills
 		if preditor_kills == 2:
 			preditor_amount += max_preditor_kills - 1
 
