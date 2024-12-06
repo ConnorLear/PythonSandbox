@@ -18,7 +18,7 @@ preditor_name: str = "People"
 most_childs = 2
 least_childs = 1
 max_preditor_kills = 2
-generations_one_turn = 8
+generations_one_turn = 100
 print(f"""There are {prey_amount} {prey_name}!
 There are {preditor_amount} {preditor_name}!
 This is the first {generations_one_turn} generations!""")
@@ -27,11 +27,11 @@ This is the first {generations_one_turn} generations!""")
 print()
 
 
-for i in range(generations_one_turn):
-	for i in range(prey_amount):
+for _ in range(generations_one_turn):
+	for _ in range(prey_amount):
 		prey_births: int = random.randint(least_childs, most_childs)
 		prey_amount += prey_births
-	for i in range(preditor_amount):
+	for _ in range(preditor_amount):
 		preditor_kills: int = random.randint(1, max_preditor_kills)
 		prey_amount -= preditor_kills
 		if preditor_kills >= 2:
