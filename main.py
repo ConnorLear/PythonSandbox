@@ -33,8 +33,8 @@ def write_results(results: list[str], file_name: str) -> None:
 
 def main() -> None:
 
-    INITIAL_PREDATORS = 1
-    INITIAL_PREY = 5
+    INITIAL_PREDATORS = 10
+    INITIAL_PREY = 500
 
     PERCENT_CHANCE_TO_KILL = 25
     MIN_KILLINGS = 0
