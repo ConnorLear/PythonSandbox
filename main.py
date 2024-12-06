@@ -34,7 +34,7 @@ for i in range(generations_one_turn):
 	for i in range(preditor_amount):
 		preditor_kills: int = random.randint(1, max_preditor_kills)
 		prey_amount -= preditor_kills
-		if preditor_kills == 2:
+		if preditor_kills >= 2:
 			preditor_amount += max_preditor_kills - 1
 
 
