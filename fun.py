@@ -1,5 +1,8 @@
 e = 1
 n: int = input("  ")
+while int(n) > 55:
+    print("You can't do that number")
+    n: int = input("  ")
 
 for i in range(int(n)+1):
     m = str(f"2^{i}: {e}")
