@@ -1,8 +1,8 @@
 e = 1
-n: int = input("Pick a number 1-54: ")
-while int(n) > 54:
-    print("You can't do that number")
-    n: int = input("Pick a number 1-54: ")
+
+import random
+
+n: int = random.randint(1, 75)
 
 for i in range(int(n)+1):
     m = str(f"2^{i}: {e}")
@@ -34,3 +34,5 @@ for j in range(int(n)):
     t1 = (int(n)-int(j)-1)*2
     t2 = int(j)
     print(f" {t2*" "}\{t1*" "}/")
+
+print(n)
